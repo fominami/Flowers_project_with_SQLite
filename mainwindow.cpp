@@ -359,7 +359,6 @@ void MainWindow::on_pushButton_7_clicked()
     MyValidator* validator = new MyValidator();
     //lineEdit->setValidator(validator);
     QString vl=lineEdit->text();
-    int s=vl.length();
     QLabel *label_13=ui->label_13;
     if(validator->validate(vl) == QValidator::Acceptable)
     {
