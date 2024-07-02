@@ -7,6 +7,6 @@ TEST(MyValidator,validate_login) {
 }
 TEST(MyValidator, validate_pass) {
 	MyValidator vo;
-	EXPECT_TRUE(vo.validate_login(std::string("Vi123456")));
-	EXPECT_FALSE(vo.validate_login(std::string("1234")));
+    EXPECT_TRUE(vo.validate_pass(std::string("Vi123456")));
+    EXPECT_FALSE(vo.validate_pass(std::string("1234")));
 }
